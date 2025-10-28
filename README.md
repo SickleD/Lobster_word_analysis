@@ -52,7 +52,8 @@ python lobster_word_analysis.py examples/sample_english.txt -n 10
 python lobster_word_analysis.py examples/sample_english.txt --min-length 2
 
 # 使用停用词文件 / Use stop words file
-python lobster_word_analysis.py examples/sample_english.txt -s stopwords.txt
+python lobster_word_analysis.py examples/sample_english.txt -s examples/stopwords_english.txt
+python lobster_word_analysis.py examples/sample_chinese.txt -s examples/stopwords_chinese.txt
 
 # 强制指定语言模式 / Force language mode
 python lobster_word_analysis.py myfile.txt --mode chinese
@@ -130,7 +131,9 @@ Lobster_word_analysis/
 ├── README.md                  # 说明文档 / Documentation
 └── examples/                  # 示例文件 / Example files
     ├── sample_english.txt     # 英文示例 / English sample
-    └── sample_chinese.txt     # 中文示例 / Chinese sample
+    ├── sample_chinese.txt     # 中文示例 / Chinese sample
+    ├── stopwords_english.txt  # 英文停用词 / English stop words
+    └── stopwords_chinese.txt  # 中文停用词 / Chinese stop words
 ```
 
 ## 依赖 / Dependencies
